@@ -17,7 +17,7 @@ const basketSlice = createSlice({
             }else{
                 return state.map(item => {
 
-                    if(item.id === action.payload.id) return {...item, qty: + 1}
+                    if(item.id === action.payload.id) return {...item, qty: item.qty +1}
                     return item
                     })
             }
